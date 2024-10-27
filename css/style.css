@@ -1,0 +1,161 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  text-align: center;
+  position: sticky;
+}
+
+img{
+  padding: 5%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Use a clean, legible font */
+  margin: 0;
+  padding: 2%;
+  background-color: #ffffff; /* Light mode background */
+  color: #000000; /* Default text color */
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: #000000;
+      color: #f0f0f0;
+  }
+}
+
+/* Responsive Typography */
+h1, h2, h3 {
+  margin: 0;
+  padding: 0.5em 0;
+}
+
+header {
+  top: 0;
+  padding: 1em;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+
+/* Scrollable Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto; /* Allow horizontal scrolling */
+}
+
+th, td {
+  padding: 0.5em;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+
+
+tr:hover {
+  background-color: #f1f1f1; /* Hover effect for accessibility */
+}
+
+/* Circular Images */
+.profile-img {
+  width: 50px; /* Fixed size for mobile */
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensure images fit within the circle */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Floating Action Button */
+.fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+/* Reduced Motion for Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+      transition: none; /* Disable transitions */
+  }
+}
+
+/* Button Hover Effect for Touch Devices */
+.fab:hover {
+  background: #0056b3; /* Darker shade on hover */
+}
+
+/* Progress Bar */
+.progress {
+  width: 100%;
+  height: 20px;
+  background: #e0e0e0;
+  border-radius: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #76c7c0; /* Green progress bar */
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Card Layout for Table Reflow */
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 1em 0;
+  padding: 1em;
+}
+
+/* Collapsible Sections */
+.collapsible {
+  cursor: pointer;
+  padding: 1em;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.collapsible.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+.content {
+  display: none;
+  overflow: hidden;
+  padding: 0 1em;
+}
+
+/* Animations for Smooth Transitions */
+.fade-in {
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
