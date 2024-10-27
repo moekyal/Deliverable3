@@ -14,6 +14,10 @@ img{
   width: 100%;
 }
 
+a{
+  color: #007bff;
+}
+
 body {
   font-family: 'Arial', sans-serif; /* Use a clean, legible font */
   margin: 0;
@@ -25,8 +29,8 @@ body {
 /* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
   body {
-      background-color: #000000;
-      color: #f0f0f0;
+      background: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
   }
 }
 
@@ -47,6 +51,7 @@ header {
 table {
   width: 100%;
   border-collapse: collapse;
+  overflow-y: scroll;
   overflow-x: auto; /* Allow horizontal scrolling */
 }
 
@@ -57,9 +62,9 @@ th, td {
 }
 
 
-
 tr:hover {
   background-color: #f1f1f1; /* Hover effect for accessibility */
+  color: black;
 }
 
 /* Circular Images */
