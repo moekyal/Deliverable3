@@ -5,14 +5,15 @@
 }
 
 h1{
-  text-align: center;
+  text-align: left;
   position: sticky;
+  margin-right: 20px;
 }
 
-img{
+/* img{
   padding: 5%;
   width: 100%;
-}
+} */
 
 a{
   color: #007bff;
@@ -41,10 +42,15 @@ h1, h2, h3 {
 }
 
 header {
+  position: sticky;
   top: 0;
   padding: 1em;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   z-index: 100;
+  background-color: #0056b3;
+  display: flex; /* Enable flexbox layout */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
 }
 
 /* Scrollable Table Styles */
@@ -68,7 +74,7 @@ tr:hover {
 }
 
 /* Circular Images */
-.profile-img {
+img {
   width: 50px; /* Fixed size for mobile */
   height: 50px;
   border-radius: 50%;
@@ -120,6 +126,13 @@ tr:hover {
   border-radius: 10px;
   transition: width 0.3s ease-in-out;
 }
+
+/* High Contrast Mode */
+@media (prefers-color-scheme: high-contrast) {
+  body {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+  }
 
 /* Card Layout for Table Reflow */
 .card {
