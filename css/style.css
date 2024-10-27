@@ -8,6 +8,7 @@ h1{
   text-align: left;
   position: sticky;
   margin-right: 20px;
+  color: #FFFFFF;
 }
 
 /* img{
@@ -15,8 +16,13 @@ h1{
   width: 100%;
 } */
 
+
 a{
-  color: #007bff;
+  color: #0052A3;
+}
+
+a:visited {
+  color: #551a8b; /* Color for visited links (or choose another color) */
 }
 
 body {
@@ -133,6 +139,16 @@ img {
     background-color: #000000; /* Black background */
     color: #ffffff; /* White text */
   }
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;          /* Makes it clear that it's clickable */
+  padding: 8px;
+  color: #333;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
 
 /* Card Layout for Table Reflow */
 .card {
@@ -165,7 +181,7 @@ img {
 }
 
 /* Animations for Smooth Transitions */
-.fade-in {
+.fade-in{
   animation: fadeIn 0.5s forwards;
 }
 
